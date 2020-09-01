@@ -103,6 +103,7 @@ body {
 }
 #page-content-wrapper p {
     margin: 0;
+    word-break: break-all;
 }
 
 /* ----- header ----- */
@@ -236,7 +237,8 @@ h3, span {
 }
 /* skill */
 #skills .row {
-    margin: 0 50px;
+    margin: 0 20px;
+    padding: 30px;
 }
 #skills .languages, #skills .flameworks {
     padding: 30px;
@@ -257,7 +259,7 @@ h3, span {
     display: flex;
 }
 .name-rate p {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 .rate {
     position: relative;
