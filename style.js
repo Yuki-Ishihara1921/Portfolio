@@ -1,7 +1,7 @@
 $(function() {
     $("#menu-toggle").click(function(e) {
         e.preventDefault()
-        $("#wrapper").toggleClass("toggled")
+        $("#sidebar").toggleClass("toggled")
         $("#menu-toggle > i.fa-bars, #menu-toggle > i.fa-times").toggleClass("fa-bars fa-times")
     })
 
@@ -11,8 +11,10 @@ $(function() {
         var target = $(href == "#" || href == "" ? 'html' : href)
         var position = target.offset().top
         $('body, html').animate({scrollTop:position}, speed, "swing")
-        $("#wrapper").toggleClass("toggled")
-        $("#menu-toggle > i.fa-bars, #menu-toggle > i.fa-times").toggleClass("fa-bars fa-times")
+        if($('div').hasClass('toggled')) {
+            $("#menu-toggle > i.fa-bars, #menu-toggle > i.fa-times").toggleClass("fa-bars fa-times")
+            $("div").removeClass("toggled")
+        }
         return false
     })
 })

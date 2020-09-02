@@ -20,9 +20,6 @@
 }
 
 /* ----- sidebar-nav ----- */
-#wrapper.toggled #sidebar-wrapper {
-    width: 250px;
-}
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -34,6 +31,9 @@
     text-align: center;
     background: deepskyblue;
     transition: all 0.5s ease;
+}
+.toggled #sidebar-wrapper {
+    width: 250px;
 }
 .sidebar-nav {
     width: 250px;
