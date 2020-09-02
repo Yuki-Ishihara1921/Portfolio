@@ -51,20 +51,19 @@
     color: #fff;
     background: rgba(255, 255, 255, 0.2);
 }
-.sidebar-nav > .sidebar-brand {
+.sidebar-nav .sidebar-brand {
     font-size: 30px;
     line-height: 75px;
 }
-.sidebar-nav > .sidebar-brand a:hover {
+.sidebar-nav .sidebar-brand a:hover {
     background: none;
 }
 
-/* ------------------------------------------------------------ */
+/* -------------------------------------------------- */
 
 
-/* ----------------- page-content ----------------- */
+/* ----------------- header ----------------- */
 
-/* ----- header ----- */
 header {
     position: relative;
 }
@@ -84,7 +83,11 @@ header img {
     height: 350px;
 }
 
-/* ----- main ----- */
+/* -------------------------------------------------- */
+
+
+/* ----------------- main ----------------- */
+
 main {
     padding: 60px 30px;
     background: floralwhite;
@@ -92,15 +95,15 @@ main {
 main .content {
     padding: 100px 0;
 }
-main h1, h2, h3, h4 {
-    margin: 0;
+main h1, main h3, main h4 {
     text-align: center;
 }
 main p {
     margin: 0;
+    word-break: break-word;
 }
 
-/* profile */
+/* ----- profile ----- */
 #profile .profileContents {
     padding: 0 30px;
     display: flex;
@@ -122,47 +125,40 @@ main p {
     padding: 0 20px;
 }
 
-/* portfolio */
-#portfolio h2 {
-    font-weight: bold;
-}
+/* ----- portfolio----- */
 #portfolio .app {
     margin: 50px;
     padding: 30px 0;
     background: turquoise;
-    box-shadow: 0px 0px 10px #fff;
     border-radius: 20px;
 }
-h3, span {
-    font-family: serif;
-}
-#portfolio .app h3 {
+.app h3 {
     color: blue;
     font-weight: bold;
 }
-#portfolio .appContents {
-    margin: 0;
-    padding: 0;
+.app h3, .app span {
+    font-family: serif;
 }
-#portfolio .appContents .appOutlines {
+.app .appContents {
+    margin: 0;
+}
+
+/* appOutlines */
+.appContents .appOutlines {
     margin: auto;
     padding: 0;
     text-align: center;
 }
-#portfolio .appContents .appOutlines img {
+.appOutlines img {
     width: 60%;
     margin: 30px 0;
     border: 1px solid;
     box-shadow: 0px 0px 5px #555;
 }
-#portfolio .appContents .appOutlines button {
+.appOutlines button {
     box-shadow: 0px 1px 5px #555;
 }
-#portfolio .appContents .appOutlines button a {
-    color: #fff;
-    text-decoration: none;
-}
-#portfolio .appContents .appOutlines .app-note {
+.appOutlines p {
     width: 80%;
     margin: 30px auto;
     padding: 10px 0;
@@ -170,50 +166,49 @@ h3, span {
     border-bottom: 1px solid;
 }
 
-/* appDetail */
+/* appDetails */
 #portfolio .appDetails {
     padding: 20px;
 }
-#portfolio .appDetails .flexItems {
-    display: flex;
-}
-#portfolio .appDetails .usingLanguage, .flamework, .productionPeriod, .github {
-    width: 50%;
-}
-#portfolio .appDetails .detail {
+.appDetails .detail {
     margin: 10px;
     padding: 10px 20px;
     background: #fff;
     box-shadow: 0px 0px 2px #555;
     border-radius: 10px;
 }
-/* skill */
-#skills .row {
-    margin: 0 20px;
-    padding: 30px;
+.appDetails .flexItems {
+    display: flex;
 }
-#skills .languages, #skills .flameportfolio {
-    padding: 30px;
+.flexItems .item {
+    width: 50%;
 }
-#skills .learning {
+
+/* ----- skill----- */
+#skills .learning-content {
     margin: 50px;
-    padding: 30px 20px;
+    padding: 30px;
     background: aliceblue;
     border: 1px solid #555;
     border-radius: 20px;
 }
-#skills .learning .skill {
+.learning-content .languages, .flameworks {
+    padding: 30px;
+}
+.learning-content .skill {
     padding: 20px;
     background: #fff;
     box-shadow: 0px 0px 5px #555;
 }
-.name-rate {
+
+/* name-rate */
+.skill .name-rate {
     display: flex;
 }
 .name-rate p {
     padding: 0 10px;
 }
-.rate {
+.name-rate .rate {
     position: relative;
     z-index: 0;
     display: inline-block;
@@ -244,30 +239,44 @@ h3, span {
 .rate[data-rate="0.5"]:after{ width: 10%; } /* 星0.5 */
 .rate[data-rate="0"]:after{ width: 0%; } /* 星0 */
 
-#skills .tool, #skills .os {
-    margin: 0;
+#skills .using-contents {
+    margin: 0 50px;
 }
-/* contact */
+.using-contents .tool, .os {
+    padding: 30px;
+    background: aliceblue;
+    border: 1px solid #555;
+    border-radius: 20px;
+}
+
+/* ----- contact ----- */
 #contact {
     text-align: center;
 }
 #contact p {
     padding: 10px 0;
+    font-size: larger;
 }
 
-/* ----- footer ----- */
+/* -------------------------------------------------- */
+
+
+/* ----------------- footer ----------------- */
+
 footer {
+    padding: 10px;
     text-align: center;
     background-color: antiquewhite;
 }
+footer p {
+    margin: 0;
+}
 footer .goTop {
-    padding: 10px 0;
-    font-size: large;
+    padding: 10px;
+    font-size: larger;
 }
 footer .copyright {
-    padding: 10px 0;
-    font-size: 10px;
+    font-size: 15px;
 }
 
-/* ------------------------------------------------------------ */
-
+/* -------------------------------------------------- */
