@@ -13,280 +13,272 @@
             <a id="menu-toggle">
                 <i class="fas fa-bars"></i>
             </a>
-            <nav class="sidebar-nav">
-                <div id="sidebar-wrapper">
-                    <ul class="sidebar-nav">
-                        <li class="sidebar-brand"><a href="#wrapper">MENU</a></li>
-                        <li class="sidebar-nav-item"><a href="#profile">PROFILE</a></li>
-                        <li class="sidebar-nav-item"><a href="#works">PORTFOLIO</a></li>
-                        <li class="sidebar-nav-item"><a href="#skills">SKILL</a></li>
-                        <li class="sidebar-nav-item"><a href="#contact">CONTACT</a></li>
-                    </ul>
-                </div>
+            <nav id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand"><a href="#wrapper">MENU</a></li>
+                    <li><a href="#profile">PROFILE</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#skills">SKILL</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
             </nav>
-   
         <!-- Page Content -->
-            <div id="page-content-wrapper">
-                <header>
-                    <div id="title">
-                        <span>Yuki Ishihara</span>
-                        <br>
-                        <span>Portoforio</span>
-                    </div>
-                    <div class="titleImage">
-                        <img src="images/title_image.jpeg" alt="title_image">
-                    </div>
-                </header>
-                <main>
-                    <div id="profile" class="content">
-                        <h1>
-                            <i class="fas fa-pen-square"></i>
-                            PROFILE
-                            <i class="fas fa-pen-square"></i>
-                        </h1>
-                        <div class="profileContents">
-                            <div class="selfImage">
-                                <img src="images/self_image.png" alt="self_image">
+            <header>
+                <div id="title">
+                    <span>Yuki Ishihara</span>
+                    <br>
+                    <span>Portoforio</span>
+                </div>
+                <img src="images/title_image.jpeg" alt="title_image">
+            </header>
+            <main>
+                <div id="profile" class="content">
+                    <h1>
+                        <i class="fas fa-pen-square"></i>
+                        PROFILE
+                        <i class="fas fa-pen-square"></i>
+                    </h1>
+                    <div class="profileContents">
+                        <div class="selfImage">
+                            <img src="images/self_image.png" alt="self_image">
+                        </div>
+                        <div class="selfProfile">
+                            <div class="name-birth">
+                                <p>◯ 名前：石原悠己 (Yuki Ishihara)</p>
+                                <p>◯ 生年月日：1995/01/20 (25歳)</p>
                             </div>
-                            <div class="myProfile">
-                                <div class="name-birth">
-                                    <p>◯ 名前：石原悠己 (Yuki Ishihara)</p>
-                                    <p>◯ 生年月日：1995/01/20 (25歳)</p>
+                            <br>
+                            <p>はじめまして。石原悠己と申します。
+                            <br>出身は山梨県で現在は東京都内に住んでいます。
+                            <br>大学を卒業後、語学スクールの事務と発達障害児の運動支援をそれぞれ約半年間務めました。
+                            <br>自分の技術で最先端のIT技術に挑戦したいと思い立ちエンジニアになることを決意し、侍エンジニア塾さんの下で半年間プログラミングの基礎を学習しました。
+                            <br>将来はIoTの技術開発に携わりたく、現在はpythonを勉強中です。
+                            <br>趣味は野球観戦と家電量販店で商品を見て回ることです。
+                            <br>よろしくお願いします。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="portfolio" class="content">
+                    <h1>
+                        <i class="fas fa-laptop"></i>
+                        PORTFOLIO
+                        <i class="fas fa-laptop"></i>
+                    </h1>
+                    <div class="app myPlan">
+                        <h3>① MyPlan (旅行計画作成アプリ)</h3>
+                        <div class="appContents row">
+                            <div class="appOutlines col-lg-6">
+                                <div>
+                                    <img src="images/MyPlan_sample.png" alt="MyPlan_image">
                                 </div>
-                                <br>
-                                <p>はじめまして。石原悠己と申します。
-                                   <br>出身は山梨県で現在は東京都内に住んでいます。
-                                   <br>大学を卒業後、語学スクールの事務と発達障害児の運動支援をそれぞれ約半年間務めました。
-                                   <br>自分の技術で最先端のIT技術に挑戦したいと思い立ちエンジニアになることを決意し、侍エンジニア塾さんの下で半年間プログラミングの基礎を学習しました。
-                                   <br>将来はIoTの技術開発に携わりたく、現在はpythonを勉強中です。
-                                   <br>趣味は野球観戦と家電量販店で商品を見て回ることです。
-                                   <br>よろしくお願いします。
+                                <a href="https://myplan-application.herokuapp.com" target="_blank">
+                                    <button class="btn btn-primary" onfocus="this.blur()">
+                                        - App Start -
+                                    </button>
+                                </a>
+                                <p class="app-note">
+                                    <span>プラン例は以下のユーザーにてご覧下さい</span>
+                                    <br>
+                                    <span>ユーザー名：guest user</span>
+                                    <br>
+                                    <span>パスワード：password</span>
+                                </p>
+                            </div>
+                            <div class="appDetails col-lg-6">
+                                <div class="detail concept">
+                                    <span>○目的・コンセプト</span>
+                                    <p>簡単・スムーズに旅行計画を作成したい</p>
+                                </div>
+                                <div class="detail overview">
+                                    <span>○概要・工夫</span>
+                                    <p>
+                                        ・旅行やお出かけの計画表を作成・編集できる。
+                                        <br>・プランの概要を記入できるページ(Outline)と、詳細を記入できるページ(Detail)がある。
+                                        <br>・Detailでは細かく計画を立てたいユーザー向けに時間単位で計画を作成できる。
+                                        <br>・表をクリックすることで内容を直接編集・データ保存することができ、この画面上での編集作業を実現するために担当講師からの勧めでVue.jsフレームワークを採用した。
+                                        <br>・JWTのトークンを用いたログイン機能を実装。
+                                    </p>
+                                </div>
+                                <div class="flexItems">
+                                    <div class="detail usingLanguage">
+                                        <span>○使用言語</span>
+                                        <p>JavaScript, Ruby, HTML/CSS</p>
+                                    </div>
+                                    <div class="detail flamework">
+                                        <span>○フロントエンド/バックエンド</span>
+                                        <p>Vue.js/Ruby on Rails</p>
+                                    </div>
+                                </div>
+                                <div class="flexItems">
+                                    <div class="detail productionPeriod">
+                                        <span>○製作期間</span>
+                                        <p>5月25日～8月30日</p>
+                                    </div>
+                                    <div class="detail github">
+                                        <span>○GitHub</span>
+                                        <p><a href="https://github.com/Yuki-Ishihara1921/MyPlan-App.git" target="_blank">YukiIshihara1921/MyPlan-App</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app smp">
+                        <h3>② SMP (中間地点検索アプリ)</h3>
+                        <div class="appContents row">
+                            <div class="appOutlines col-lg-6">
+                                <div>
+                                    <img src="images/SMP_sample.png" alt="SMP_image">
+                                </div>
+                                <button class="btn btn-primary" onfocus="this.blur()">
+                                    <a href="https://smp-app.herokuapp.com/" target="_blank">
+                                        - App Start -
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="appDetails col-lg-6">
+                                <div class="detail concept">
+                                    <span>○目的・コンセプト</span>
+                                    <p>各場所の中間にあたる地点を検索したい<br>（使用目的例：複数の友人と食事をする場所を決める際に、なるべく距離が同じになる場所に決めたい）</p>
+                                </div>
+                                <div class="detail overview">
+                                    <span>○概要・工夫</span>
+                                    <p>
+                                        ・２〜４つ場所の名前を入力・検索し、それらの場所の中間となる地点を地図上で表示する。
+                                        <br>・地図はGoogle Maps APIを使用。
+                                        <br>・入力した各場所の緯度・経度の値を取得し、その平均値を算出し、その地点を中間地点として地図上にマーカー表示している。
+                                        <br>・フレームワークは非同期処理とプログラミングのしやすさからVue.jsを採用。
+                                    </p>
+                                </div>
+                                <div class="flexItems">
+                                    <div class="detail usingLanguage">
+                                        <span>○使用言語</span>
+                                        <p>JavaScript, HTML/CSS</p>
+                                    </div>
+                                    <div class="detail flamework">
+                                        <span>○フレームワーク</span>
+                                        <p>Vue.js</p>
+                                    </div>
+                                </div>
+                                <div class="flexItems">
+                                    <div class="detail productionPeriod">
+                                        <span>○製作期間</span>
+                                        <p>8月11日〜8月23日</p>
+                                    </div>
+                                    <div class="detail github">
+                                        <span>○GitHub</span>
+                                        <p><a href="https://github.com/Yuki-Ishihara1921/SMP-App.git" target="_blank">Yuki-Ishihara1921/SMP-App</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="skills" class="content">
+                    <h1>
+                        <i class="fas fa-clipboard-list"></i>
+                        SKILL
+                        <i class="fas fa-clipboard-list"></i>
+                    </h1>
+                    <div class="learning">
+                        <h3>ー 学習した言語 ー</h3>
+                        <div class="languages row">
+                            <div class="skill html-css col-md-6">
+                                <div class="name-rate">
+                                    <h5>
+                                        HTML5/CSS3 
+                                        　<span class="rate" data-rate="3.5"></span>
+                                    </h5>
+                                </div>
+                                <p>idやclassを使って基本的なスタイルを当てることができる。CSSのフレームワークはBootstrapを使用している。</p>
+                            </div>
+                            <div class="skill ruby col-md-6">
+                                <div class="name-rate">
+                                    <h5>
+                                        Ruby 
+                                        　<span class="rate" data-rate="2"></span>
+                                    </h5>
+                                </div>
+                                <p>変数、条件分岐、ループを理解しており、簡単なコードであれば記述することができる。</p>
+                            </div>
+                            <div class="skill javascript col-md-6">
+                                <div class="name-rate">
+                                    <h5>
+                                        JavaScript 
+                                        　<span class="rate" data-rate="3"></span>
+                                    </h5>
+                                </div>
+                                <p>変数、条件分岐、ループを理解し、簡単なコードであれば記述することができる。調べながらであるが、自分で関数を作り目的の動きを付けている。ライブラリはJQueryを使用している。</p>
+                            </div>
+                            <div class="skill java col-md-6">
+                                <div class="name-rate">
+                                    <h5>
+                                        Java 
+                                        　<span class="rate" data-rate="2"></span>
+                                    </h5>
+                                </div>
+                                <p>条件分岐や繰り返し処理など基本的なコードを書くことができる。switchやwhile文を用いた簡単な占いができるシステムを、ScannerやRandom、ArrayListを用いた簡単なくじ引きができるシステムを作成した。
+                                    <br><a href="https://github.com/Yuki-Ishihara1921/Uranai-System.git">占い</a> / <a href="https://github.com/Yuki-Ishihara1921/Gacha-System.git">くじ引き</a>　(GitHubより)
                                 </p>
                             </div>
                         </div>
-
                     </div>
-                    <div id="works" class="content">
-                        <h1>
-                            <i class="fas fa-laptop"></i>
-                            PORTFOLIO
-                            <i class="fas fa-laptop"></i>
-                        </h1>
-                        <div class="app myPlan">
-                            <h3>① MyPlan (旅行計画作成アプリ)</h3>
-                            <div class="appContents row">
-                                <div class="appOutlines col-lg-6">
-                                    <div>
-                                        <img src="images/MyPlan_sample.png" alt="MyPlan_image">
-                                    </div>
-                                    <a href="https://myplan-application.herokuapp.com" target="_blank">
-                                        <button class="btn btn-primary" onfocus="this.blur()">
-                                            - App Start -
-                                        </button>
-                                    </a>
-                                    <p class="app-note">
-                                        <span>プラン例は以下のユーザーにてご覧下さい</span>
-                                        <br>
-                                        <span>ユーザー名：guest user</span>
-                                        <br>
-                                        <span>パスワード：password</span>
-                                    </p>
+                    <div class="learning">
+                        <h3>ー 学習したフレームワーク ー</h3>
+                        <div class="frameportfolio row">
+                            <div class="skill vue col-md-6">
+                                <div class="name-rate">
+                                    <h5>
+                                        Vue.js 
+                                        　<span class="rate" data-rate="3"></span>
+                                    </h5>
                                 </div>
-                                <div class="appDetails col-lg-6">
-                                    <div class="detail concept">
-                                        <span>○目的・コンセプト</span>
-                                        <p>簡単・スムーズに旅行計画を作成したい</p>
-                                    </div>
-                                    <div class="detail overview">
-                                        <span>○概要・工夫</span>
-                                        <p>
-                                            ・旅行やお出かけの計画表を作成・編集できる。
-                                            <br>・プランの概要を記入できるページ(Outline)と、詳細を記入できるページ(Detail)がある。
-                                            <br>・Detailでは細かく計画を立てたいユーザー向けに時間単位で計画を作成できる。
-                                            <br>・表をクリックすることで内容を直接編集・データ保存することができ、この画面上での編集作業を実現するために担当講師からの勧めでVue.jsフレームワークを採用した。
-                                            <br>・JWTのトークンを用いたログイン機能を実装。
-                                        </p>
-                                    </div>
-                                    <div class="flexItems">
-                                        <div class="detail usingLanguage">
-                                            <span>○使用言語</span>
-                                            <p>JavaScript, Ruby, HTML/CSS</p>
-                                        </div>
-                                        <div class="detail flamework">
-                                            <span>○フロントエンド/バックエンド</span>
-                                            <p>Vue.js/Ruby on Rails</p>
-                                        </div>
-                                    </div>
-                                    <div class="flexItems">
-                                        <div class="detail productionPeriod">
-                                            <span>○製作期間</span>
-                                            <p>5月25日～8月30日</p>
-                                        </div>
-                                        <div class="detail github">
-                                            <span>○GitHub</span>
-                                            <p><a href="https://github.com/Yuki-Ishihara1921/MyPlan-App.git" target="_blank">YukiIshihara1921/MyPlan-App</a></p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <p>YarnやNPMを利用して必要なライブラリをインストールし、axiosを用いてRailsとAPI通信して必要なデータをCRUD操作できる。</p>
                             </div>
-                        </div>
-                        <div class="app smp">
-                            <h3>② SMP (中間地点検索アプリ)</h3>
-                            <div class="appContents row">
-                                <div class="appOutlines col-lg-6">
-                                    <div>
-                                        <img src="images/SMP_sample.png" alt="SMP_image">
-                                    </div>
-                                    <button class="btn btn-primary" onfocus="this.blur()">
-                                        <a href="https://smp-app.herokuapp.com/" target="_blank">
-                                            - App Start -
-                                        </a>
-                                    </button>
+                            <div class="skill rails col-md-6">
+                                <div class="name-rate">
+                                    <h5>
+                                        Ruby on Rails 
+                                        　<span class="rate" data-rate="2"></span>
+                                    </h5>
                                 </div>
-                                <div class="appDetails col-lg-6">
-                                    <div class="detail concept">
-                                        <span>○目的・コンセプト</span>
-                                        <p>各場所の中間にあたる地点を検索したい<br>（使用目的例：複数の友人と食事をする場所を決める際に、なるべく距離が同じになる場所に決めたい）</p>
-                                    </div>
-                                    <div class="detail overview">
-                                        <span>○概要・工夫</span>
-                                        <p>
-                                            ・２〜４つ場所の名前を入力・検索し、それらの場所の中間となる地点を地図上で表示する。
-                                            <br>・地図はGoogle Maps APIを使用。
-                                            <br>・入力した各場所の緯度・経度の値を取得し、その平均値を算出し、その地点を中間地点として地図上にマーカー表示している。
-                                            <br>・フレームワークは非同期処理とプログラミングのしやすさからVue.jsを採用。
-                                        </p>
-                                    </div>
-                                    <div class="flexItems">
-                                        <div class="detail usingLanguage">
-                                            <span>○使用言語</span>
-                                            <p>JavaScript, HTML/CSS</p>
-                                        </div>
-                                        <div class="detail flamework">
-                                            <span>○フレームワーク</span>
-                                            <p>Vue.js</p>
-                                        </div>
-                                    </div>
-                                    <div class="flexItems">
-                                        <div class="detail productionPeriod">
-                                            <span>○製作期間</span>
-                                            <p>8月11日〜8月23日</p>
-                                        </div>
-                                        <div class="detail github">
-                                            <span>○GitHub</span>
-                                            <p><a href="https://github.com/Yuki-Ishihara1921/SMP-App.git" target="_blank">Yuki-Ishihara1921/SMP-App</a></p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <p>MVSの仕組みを理解し、簡単なルーティングができる。has_secure_passwordメソッドを用いたログイン機能を実装できる。</p>
                             </div>
                         </div>
                     </div>
-                    <div id="skills" class="content">
-                        <h1>
-                            <i class="fas fa-clipboard-list"></i>
-                            SKILL
-                            <i class="fas fa-clipboard-list"></i>
-                        </h1>
-                        <div class="learning">
-                            <h3>ー 学習した言語 ー</h3>
-                            <div class="languages row">
-                                <div class="skill html-css col-md-6">
-                                    <div class="name-rate">
-                                        <h5>
-                                            HTML/CSS 
-                                            <span class="rate" data-rate="3.5"></span>
-                                        </h5>
-                                    </div>
-                                    <p>idやclassを使って基本的なスタイルを当てることができる。CSSのフレームワークはBootstrapを使用している。</p>
-                                </div>
-                                <div class="skill ruby col-md-6">
-                                    <div class="name-rate">
-                                        <h5>
-                                            Ruby 
-                                            <span class="rate" data-rate="2"></span>
-                                        </h5>
-                                    </div>
-                                    <p>変数、条件分岐、ループを理解しており、簡単なコードであれば記述することができる。</p>
-                                </div>
-                                <div class="skill javascript col-md-6">
-                                    <div class="name-rate">
-                                        <h5>
-                                            JavaScript 
-                                            <span class="rate" data-rate="3"></span>
-                                        </h5>
-                                    </div>
-                                    <p>変数、条件分岐、ループを理解し、簡単なコードであれば記述することができる。調べながらであるが、自分で関数を作り目的の動きを付けている。ライブラリはJQueryを使用している。</p>
-                                </div>
-                                <div class="skill java col-md-6">
-                                    <div class="name-rate">
-                                        <h5>
-                                            Java 
-                                            <span class="rate" data-rate="2"></span>
-                                        </h5>
-                                    </div>
-                                    <p>条件分岐や繰り返し処理など基本的なコードを書くことができる。switchやwhile文を用いた簡単な占いができるシステムを、ScannerやRandom、ArrayListを用いた簡単なくじ引きができるシステムを作成した。
-                                        <br><a href="https://github.com/Yuki-Ishihara1921/Uranai-System.git">占い</a> / <a href="https://github.com/Yuki-Ishihara1921/Gacha-System.git">くじ引き</a>　(GitHubより)
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="row">
+                        <div class="learning tool col-md-6">
+                            <h3>ー 使用したツール ー</h3>
+                            <h4>GitHub</h4>
                         </div>
-                        <div class="learning">
-                            <h3>ー 学習したフレームワーク ー</h3>
-                            <div class="frameworks row">
-                                <div class="skill vue col-md-6">
-                                    <div class="name-rate">
-                                        <h5>
-                                            Vue.js 
-                                            <span class="rate" data-rate="3"></span>
-                                        </h5>
-                                    </div>
-                                    <p>YarnやNPMを利用して必要なライブラリをインストールし、axiosを用いてRailsとAPI通信して必要なデータをCRUD操作できる。</p>
-                                </div>
-                                <div class="skill rails col-md-6">
-                                    <div class="name-rate">
-                                        <h5>
-                                            Ruby on Rails 
-                                            <span class="rate" data-rate="2"></span>
-                                        </h5>
-                                    </div>
-                                    <p>MVSの仕組みを理解し、簡単なルーティングができる。has_secure_passwordメソッドを用いたログイン機能を実装できる。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="learning tool col-md-6">
-                                <h3>ー 使用したツール ー</h3>
-                                <h4>GitHub</h4>
-                            </div>
-                            <div class="learning os col-md-6">
-                                <h3>ー 使用したOS ー</h3>
-                                <h4>MacOS</h4>
-                            </div>
+                        <div class="learning os col-md-6">
+                            <h3>ー 使用したOS ー</h3>
+                            <h4>MacOS</h4>
                         </div>
                     </div>
-                    <div id="contact" class="content">
-                        <h1>
-                            <i class="fas fa-envelope"></i>
-                            CONTACT
-                            <i class="fas fa-envelope"></i>
-                        </h1>
-                        <span>
-                            ご連絡の際は
-                            <a href="mailto:1921cd.p@gmail.com?subject=件名&body=本文を入力">こちら</a>
-                            からお願いします。( Mail )
-                        </span>
-                        
-                    </div>
-                </main>
-                <footer>
-                    <div class="footer goTop">
-                        <a href="#wrapper">- TOP -</a>
-                    </div>
-                    <div class="footer copyright">
-                        <p>Copyright ©️ Yuki Ishihara Portfolio</p>
-                    </div>
-                </footer>
-            </div>
+                </div>
+                <div id="contact" class="content">
+                    <h1>
+                        <i class="fas fa-envelope"></i>
+                        CONTACT
+                        <i class="fas fa-envelope"></i>
+                    </h1>
+                    <p>
+                        ご連絡の際は
+                        <a href="mailto:1921cd.p@gmail.com?subject=件名&body=本文を入力">こちら</a>
+                        からお願いします。( Mail )
+                    </p>
+                    
+                </div>
+            </main>
+            <footer>
+                <div class="footer goTop">
+                    <a href="#wrapper">- TOP -</a>
+                </div>
+                <div class="footer copyright">
+                    <p>Copyright ©️ Yuki Ishihara Portfolio</p>
+                </div>
+            </footer>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

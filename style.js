@@ -11,6 +11,8 @@ $(function() {
         var target = $(href == "#" || href == "" ? 'html' : href)
         var position = target.offset().top
         $('body, html').animate({scrollTop:position}, speed, "swing")
+        $("#wrapper").toggleClass("toggled")
+        $("#menu-toggle > i.fa-bars, #menu-toggle > i.fa-times").toggleClass("fa-bars fa-times")
         return false
     })
 })

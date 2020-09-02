@@ -1,28 +1,8 @@
 @charset "UTF-8";
 
-/* ------------------ wrapper ----------------- */
-body {
-    background-color: snow;
-}
-#wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
+/* ----------------- sidebar ----------------- */
 
-#wrapper.toggled #sidebar-wrapper {
-    width: 250px;
-}
-
-#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    margin-right: -250px;
-}
-/* ------------------------------------------------------------ */
-
-/* ----------------- menu-toggle ----------------- */
+/* ----- menu-toggle ----- */
 #menu-toggle {
     z-index: 1001;
     position: fixed;
@@ -36,12 +16,13 @@ body {
     background: rgba(52, 58, 64, .5);
 }
 #menu-toggle:hover {
-    color: #fff;
     background: #343a40;
 }
-/* ------------------------------------------------------------ */
 
-/* ----------------- nav sidebar ----------------- */
+/* ----- sidebar-nav ----- */
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -51,27 +32,18 @@ body {
     margin-left: -250px;
     overflow-y: auto;
     text-align: center;
-    background: turquoise;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    background: deepskyblue;
     transition: all 0.5s ease;
 }
-
 .sidebar-nav {
-    position: absolute;
-    top: 0;
     width: 250px;
-    margin: 0;
     padding: 0;
-    list-style: none;
 }
 .sidebar-nav li {
     line-height: 70px;
 }
 .sidebar-nav li a {
     display: block;
-    text-decoration: none;
     color: #555;
 }
 .sidebar-nav li a:hover {
@@ -79,32 +51,18 @@ body {
     color: #fff;
     background: rgba(255, 255, 255, 0.2);
 }
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
 .sidebar-nav > .sidebar-brand {
     font-size: 30px;
     line-height: 75px;
 }
-.sidebar-nav > .sidebar-brand a {
-}
 .sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
     background: none;
 }
+
 /* ------------------------------------------------------------ */
 
-/* ----------------- main page contents ----------------- */
 
-#page-content-wrapper {
-    width: 100%;
-    position: absolute;
-    background: floralwhite;
-}
-#page-content-wrapper p {
-    margin: 0;
-    word-break: break-all;
-}
+/* ----------------- page-content ----------------- */
 
 /* ----- header ----- */
 header {
@@ -128,26 +86,22 @@ header img {
 
 /* ----- main ----- */
 main {
-    padding: 30px;
+    padding: 60px 30px;
+    background: floralwhite;
 }
 main .content {
     padding: 100px 0;
 }
-main h1 {
+main h1, h2, h3, h4 {
     margin: 0;
-    text-align: center;
-}
-main h2, h3, h4 {
     text-align: center;
 }
 main p {
     margin: 0;
 }
+
 /* profile */
 #profile .profileContents {
-    width: 100%;
-    height: 100%;
-    margin: 0;
     padding: 0 30px;
     display: flex;
     align-items: center;
@@ -156,25 +110,23 @@ main p {
     width: 35%;
     padding: 0 5%;
 }
-#profile img {
+.selfImage img {
     width: 100%;
 }
-#profile .myProfile {
+#profile .selfProfile {
     width: 65%;
     padding: 5%;
     font-size: larger;
 }
-#profile .myProfile .name-birth {
+.selfProfile .name-birth {
     padding: 0 20px;
 }
 
-/* works */
-#works {
-}
-#works h2 {
+/* portfolio */
+#portfolio h2 {
     font-weight: bold;
 }
-#works .app {
+#portfolio .app {
     margin: 50px;
     padding: 30px 0;
     background: turquoise;
@@ -184,33 +136,33 @@ main p {
 h3, span {
     font-family: serif;
 }
-#works .app h3 {
+#portfolio .app h3 {
     color: blue;
     font-weight: bold;
 }
-#works .appContents {
+#portfolio .appContents {
     margin: 0;
     padding: 0;
 }
-#works .appContents .appOutlines {
+#portfolio .appContents .appOutlines {
     margin: auto;
     padding: 0;
     text-align: center;
 }
-#works .appContents .appOutlines img {
+#portfolio .appContents .appOutlines img {
     width: 60%;
     margin: 30px 0;
     border: 1px solid;
     box-shadow: 0px 0px 5px #555;
 }
-#works .appContents .appOutlines button {
+#portfolio .appContents .appOutlines button {
     box-shadow: 0px 1px 5px #555;
 }
-#works .appContents .appOutlines button a {
+#portfolio .appContents .appOutlines button a {
     color: #fff;
     text-decoration: none;
 }
-#works .appContents .appOutlines .app-note {
+#portfolio .appContents .appOutlines .app-note {
     width: 80%;
     margin: 30px auto;
     padding: 10px 0;
@@ -219,16 +171,16 @@ h3, span {
 }
 
 /* appDetail */
-#works .appDetails {
+#portfolio .appDetails {
     padding: 20px;
 }
-#works .appDetails .flexItems {
+#portfolio .appDetails .flexItems {
     display: flex;
 }
-#works .appDetails .usingLanguage, .flamework, .productionPeriod, .github {
+#portfolio .appDetails .usingLanguage, .flamework, .productionPeriod, .github {
     width: 50%;
 }
-#works .appDetails .detail {
+#portfolio .appDetails .detail {
     margin: 10px;
     padding: 10px 20px;
     background: #fff;
@@ -240,7 +192,7 @@ h3, span {
     margin: 0 20px;
     padding: 30px;
 }
-#skills .languages, #skills .flameworks {
+#skills .languages, #skills .flameportfolio {
     padding: 30px;
 }
 #skills .learning {
