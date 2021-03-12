@@ -64,72 +64,21 @@
 
 /* ----------------- header ----------------- */
 
-header {
-    position: relative;
-}
-header #title {
-    width: 100%;
-    position: absolute;
-    top: 20%;
-    text-align: center;
-    color: #fff;
-    font-size: 60px;
-    font-family: serif;
-    font-weight: 600;
-    letter-spacing: 5px;
-}
-header img {
-    width: 100%;
-    height: 350px;
-}
+
 
 /* -------------------------------------------------- */
 
 
 /* ----------------- main ----------------- */
 
-main {
-    padding: 60px 30px;
-    background: floralwhite;
-}
-main .content {
-    padding: 100px 0;
-}
-main h1, main h3, main h4 {
-    text-align: center;
-}
-main p {
-    margin: 0;
-    word-break: break-word;
-}
 
 /* ----- profile ----- */
-#profile .profileContents {
-    padding: 0 30px;
-    display: flex;
-    align-items: center;
-}
-#profile .selfImage {
-    width: 35%;
-    padding: 0 5%;
-}
-.selfImage img {
-    width: 100%;
-}
-#profile .selfProfile {
-    width: 65%;
-    padding: 5%;
-    font-size: larger;
-}
-.selfProfile .name-birth {
-    padding: 0 20px;
-}
+
 
 /* ----- portfolio----- */
 #portfolio .app {
-    margin: 50px;
     padding: 30px 0;
-    background: turquoise;
+    border: 1px solid;
     border-radius: 20px;
 }
 .app h3 {
@@ -166,89 +115,6 @@ main p {
     border-bottom: 1px solid;
 }
 
-/* appDetails */
-#portfolio .appDetails {
-    padding: 20px;
-}
-.appDetails .detail {
-    margin: 10px;
-    padding: 10px 20px;
-    background: #fff;
-    box-shadow: 0px 0px 2px #555;
-    border-radius: 10px;
-}
-.appDetails .flexItems {
-    display: flex;
-}
-.flexItems .item {
-    width: 50%;
-}
-
-/* ----- skill----- */
-#skills .learning-content {
-    margin: 50px;
-    padding: 30px;
-    background: aliceblue;
-    border: 1px solid #555;
-    border-radius: 20px;
-}
-.learning-content .languages, .flameworks {
-    padding: 30px;
-}
-.learning-content .skill {
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0px 0px 5px #555;
-}
-
-/* name-rate */
-.skill .name-rate {
-    display: flex;
-}
-.name-rate p {
-    padding: 0 10px;
-}
-.name-rate .rate {
-    position: relative;
-    z-index: 0;
-    display: inline-block;
-    white-space: nowrap;
-    color: #CCCCCC;
-}
-.rate::before, .rate::after {
-    content: "★★★★★";
-}
-.rate::after {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    color: #ffcf32;
-    overflow: hidden;
-    white-space: nowrap;
-}
-.rate[data-rate="5"]:after{ width: 100%; } /* 星5 */
-.rate[data-rate="4.5"]:after{ width: 90%; } /* 星4.5 */
-.rate[data-rate="4"]:after{ width: 80%; } /* 星4 */
-.rate[data-rate="3.5"]:after{ width: 70%; } /* 星3.5 */
-.rate[data-rate="3"]:after{ width: 60%; } /* 星3 */
-.rate[data-rate="2.5"]:after{ width: 50%; } /* 星2.5 */
-.rate[data-rate="2"]:after{ width: 40%; } /* 星2 */
-.rate[data-rate="1.5"]:after{ width: 30%; } /* 星1.5 */
-.rate[data-rate="1"]:after{ width: 20%; } /* 星1 */
-.rate[data-rate="0.5"]:after{ width: 10%; } /* 星0.5 */
-.rate[data-rate="0"]:after{ width: 0%; } /* 星0 */
-
-#skills .using-contents {
-    margin: 0 50px;
-}
-.using-contents .tool, .os {
-    padding: 30px;
-    background: aliceblue;
-    border: 1px solid #555;
-    border-radius: 20px;
-}
-
 /* ----- contact ----- */
 #contact {
     text-align: center;
@@ -280,3 +146,128 @@ footer .copyright {
 }
 
 /* -------------------------------------------------- */
+
+body {
+    animation: fadeIn 3.5s ease 0s 1 normal;
+    background: repeating-linear-gradient(
+        -45deg,
+        rgb(222, 247, 255) 0, rgb(222, 247, 255)5px,
+        #fff 5px, #fff 10px
+    );
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* header */
+header {
+    position: relative;
+}
+
+.header__content--img {
+    width: 100%;
+    height: 200px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.header__content--title {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    color: #fff;
+    font-family: serif;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.header__content--name {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #fff;
+}
+
+/* main */
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main__content {
+    margin: 30px auto;
+}
+
+.main__content--title {
+    padding: 25px;
+    text-align: center;
+}
+
+/* profile */
+
+
+.profile__container img {
+    max-width: 150px;
+}
+
+table th {
+    width: 140px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+table td {
+    vertical-align: middle;
+}
+
+table ul {
+    margin: 0;
+}
+
+/* products */
+.app__content {
+    margin: 1rem;
+    padding: 1rem;
+}
+.app__myPlan {
+    background: #fdedf8;
+}
+.app__myDiary {
+    background: #f9dde1;
+}
+.app__smp {
+    background: #e3ffd0;
+}
+.app__houseworkList {
+    background: #d0eeff;
+}
+.app__foodReport {
+    background: #ffe4c5;
+}
+.appImages {
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    margin: auto;
+}
+.appImages img {
+    margin: 1rem;
+    max-width: 300px;
+    min-width: 150px;
+    box-shadow: 0px 2px 5px 0px #555;
+}
+.appLogin {
+    max-width: 400px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+}
+.appDetails {
+    max-width: 650px;
+    margin: auto;
+}
