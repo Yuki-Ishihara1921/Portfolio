@@ -66,6 +66,7 @@ body {
 .sidebar-nav li a {
     display: block;
     color: #555;
+    text-decoration: none;
 }
 
 .sidebar-nav li a:hover {
