@@ -117,9 +117,11 @@
 
 /* ----- contact ----- */
 #contact {
+    padding-bottom: 8rem;
     text-align: center;
 }
 #contact p {
+    margin: 0;
     padding: 10px 0;
     font-size: larger;
 }
@@ -151,6 +153,7 @@ footer .copyright {
 /* -------------------------------------------------- */
 
 body {
+    position: relative;
     animation: fadeIn 3.5s ease 0s 1 normal;
     background: repeating-linear-gradient(
         -45deg,
@@ -263,6 +266,8 @@ table ul {
     margin: 1rem;
     max-width: 300px;
     min-width: 150px;
+    max-height: 300px;
+    min-height: 150px;
     height: auto;
     box-shadow: 0px 2px 5px 0px #555;
 }
