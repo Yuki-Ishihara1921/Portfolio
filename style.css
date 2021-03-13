@@ -1,156 +1,6 @@
 @charset "UTF-8";
 
-/* ----------------- sidebar ----------------- */
-
-/* ----- menu-toggle ----- */
-#menu-toggle {
-    z-index: 1001;
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    color: #fff;
-    background: rgba(52, 58, 64, .5);
-}
-#menu-toggle:hover {
-    background: #343a40;
-}
-
-/* ----- sidebar-nav ----- */
-#sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    left: 250px;
-    width: 0;
-    height: 100%;
-    margin-left: -250px;
-    overflow-y: auto;
-    text-align: center;
-    background: deepskyblue;
-    transition: all 0.5s ease;
-}
-.toggled #sidebar-wrapper {
-    width: 250px;
-}
-.sidebar-nav {
-    width: 250px;
-    padding: 0;
-}
-.sidebar-nav li {
-    line-height: 70px;
-}
-.sidebar-nav li a {
-    display: block;
-    color: #555;
-}
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
-}
-.sidebar-nav .sidebar-brand {
-    font-size: 30px;
-    line-height: 75px;
-}
-.sidebar-nav .sidebar-brand a:hover {
-    background: none;
-}
-
-/* -------------------------------------------------- */
-
-
-/* ----------------- header ----------------- */
-
-
-
-/* -------------------------------------------------- */
-
-
-/* ----------------- main ----------------- */
-
-
-/* ----- profile ----- */
-
-
-/* ----- portfolio----- */
-#portfolio .app {
-    padding: 30px 0;
-    border: 1px solid;
-    border-radius: 20px;
-}
-.app h3 {
-    color: blue;
-    font-weight: bold;
-}
-.app h3, .app span {
-    font-family: serif;
-}
-.app .appContents {
-    margin: 0;
-}
-
-/* appOutlines */
-.appContents .appOutlines {
-    margin: auto;
-    padding: 0;
-    text-align: center;
-}
-.appOutlines img {
-    width: 60%;
-    margin: 30px 0;
-    border: 1px solid;
-    box-shadow: 0px 0px 5px #555;
-}
-.appOutlines button {
-    box-shadow: 0px 1px 5px #555;
-}
-.appOutlines p {
-    width: 80%;
-    margin: 30px auto;
-    padding: 10px 0;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-}
-
-/* ----- contact ----- */
-#contact {
-    padding-bottom: 8rem;
-    text-align: center;
-}
-#contact p {
-    margin: 0;
-    padding: 10px 0;
-    font-size: larger;
-}
-
-/* -------------------------------------------------- */
-
-
-/* ----------------- footer ----------------- */
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    background-color: antiquewhite;
-}
-footer p {
-    margin: 0;
-}
-footer .goTop {
-    padding: 10px;
-    font-size: larger;
-}
-footer .copyright {
-    font-size: 15px;
-}
-
-/* -------------------------------------------------- */
+/* body */
 
 body {
     position: relative;
@@ -167,7 +17,64 @@ body {
     100% {opacity: 1;}
 }
 
+
+/* sidebar */
+
+#menu-toggle {
+    z-index: 1001;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    background: rgba(52, 58, 64, .5);
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+}
+
+#menu-toggle:hover {
+    background: #343a40;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    background: #ddffeb;
+    text-align: center;
+    transition: all 0.5s ease;
+    overflow-y: auto;
+}
+
+.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+.sidebar-nav {
+    width: 250px;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    line-height: 70px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    color: #555;
+}
+
+.sidebar-nav li a:hover {
+    background: rgba(141, 141, 141, 0.32);
+}
+
+
 /* header */
+
 header {
     position: relative;
 }
@@ -198,6 +105,7 @@ header {
     color: #fff;
 }
 
+
 /* main */
 
 main {
@@ -206,24 +114,90 @@ main {
 }
 
 .main__content {
-    margin: 30px auto;
+    margin: auto 1rem;
+    padding: 1rem 0 7rem;
 }
 
 .main__content--title {
-    padding: 25px;
+    padding: 20px;
     text-align: center;
 }
 
+
 /* profile */
 
-
-.profile__container img {
+#profile img {
     max-width: 150px;
     margin: 2rem auto;
 }
 
+
+/* products */
+
+.product--myPlan {
+    background: #fdedf8;
+}
+
+.product--myDiary {
+    background: #f9dde1;
+}
+
+.product--smp {
+    background: #e3ffd0;
+}
+
+.product--houseworkList {
+    background: #d0eeff;
+}
+
+.product--foodReport {
+    background: #ffe4c5;
+}
+
+.product__content--images {
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.product__content--images img {
+    margin: 1rem;
+    max-width: 300px;
+    min-width: 150px;
+    max-height: 300px;
+    box-shadow: 0px 2px 5px 0px #555;
+}
+
+.product__content--login {
+    max-width: 400px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product__content--details {
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+
+/* table */
+
 table th {
-    width: 140px;
+    width: 130px;
     vertical-align: middle;
     text-align: center;
 }
@@ -234,50 +208,4 @@ table td {
 
 table ul {
     margin: 0;
-}
-
-/* products */
-.app__content {
-    margin: 1rem;
-    padding: 1rem;
-}
-.app__myPlan {
-    background: #fdedf8;
-}
-.app__myDiary {
-    background: #f9dde1;
-}
-.app__smp {
-    background: #e3ffd0;
-}
-.app__houseworkList {
-    background: #d0eeff;
-}
-.app__foodReport {
-    background: #ffe4c5;
-}
-.appImages {
-    display: flex;
-    justify-content: center;
-    max-width: 700px;
-    margin: auto;
-}
-.appImages img {
-    margin: 1rem;
-    max-width: 300px;
-    min-width: 150px;
-    max-height: 300px;
-    min-height: 150px;
-    height: auto;
-    box-shadow: 0px 2px 5px 0px #555;
-}
-.appLogin {
-    max-width: 400px;
-    margin: auto;
-    padding: 1rem;
-    text-align: center;
-}
-.appDetails {
-    max-width: 650px;
-    margin: auto;
 }
